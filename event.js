@@ -1,3 +1,32 @@
+function makeDisable(playerName)
+{
+    const selectBtn = document.getElementById(playerName);
+    selectBtn.setAttribute('disabled',true);
+}
+
+function addPlayer(player)
+{
+    const playerName =  document.getElementById(player);
+    const playerValue= playerName.innerText;
+    const li = document.createElement('li');
+    li.innerText = playerValue;
+    const playerList = document.getElementById('player-list');
+  
+
+    const list = document.querySelectorAll('li');
+    if(list.length < 5)
+    {
+        playerList.appendChild(li);
+    }
+    else
+    {
+        alert("You are not able to add more Player");
+    }
+    
+}
+
+
+
 document.getElementById('player-calculate-btn').addEventListener('click',function()
 {
 
