@@ -1,3 +1,4 @@
+//outside functions
 function makeDisable(playerName)
 {
     const selectBtn = document.getElementById(playerName);
@@ -26,6 +27,7 @@ function addPlayer(player)
 }
 
 
+//eventhandler function
 
 document.getElementById('player-calculate-btn').addEventListener('click',function()
 {
